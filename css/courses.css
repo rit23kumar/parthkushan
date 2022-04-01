@@ -1,0 +1,17 @@
+@import './mixins.css';
+
+/* COURSE */
+.fee {
+  text-align: left;
+  font-size: 1.3rem;
+  padding: 0 0 0 20%;
+  color: var(--text-1);
+}
+.fee span {
+  font-weight: bold;
+  color: var(--text-2);
+}
+.text-1 {
+  text-align: center;
+  padding-right: 10%;
+}

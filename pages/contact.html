@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./../css/mixins.css">
+    <link rel="stylesheet" href="./../css/navbar.css">
+    <link rel="stylesheet" href="./../css/contact.css">
+    <link rel="stylesheet" href="./../css/responsive.css">
+    <title>ParthKushan</title>
+  </head>
+  <body id="root">
+    <nav>
+      <div class="container">
+        <div class="brand">
+          <a href="./../index.html" class="logo"><img src="./../images/logo.png" alt=""></a>
+        </div>
+        
+        <i
+            onclick="showMenu()"
+            id="show-menu"
+            class="fa-solid fa-bars"
+          ></i>
+          <i
+            onclick="hideMenu()"
+            id="hide-menu"
+            class="fa-solid fa-circle-xmark"
+          ></i>
+          
+        <div class="navs" id="navigation">
+          
+          <ul>
+            <li>
+              <a href="./../index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+              <a href="./courses.html" class="nav-links">Courses</a>
+            </li>
+            <li>
+              <a href="./admission.html" class="nav-links">Admission</a>
+            </li>
+            <li>
+              <a href="./about.html" class="nav-links">About Us</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="nav-links  active">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </nav>
+    <a class="top" href="#root"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    <main>
+      <!-- CONTACT SECTION -->
+      <section class="container-fluid" id="contact-section" style="margin-top: 6rem;">
+       <div class="container">
+        <div class="container-fluid">
+         <h5 class="section-heading">Contact Us</h5>
+        </div>
+        <div class="row">
+         <div class="col-2">
+          
+           <form action="" method="">
+           <label  for="name">Full Name:</label><br />
+           <input type="text" id="name" name="name" placeholder="Enter Your Name." required><br />
+           <label  for="email">E-mail:</label><br />
+           <input type="email" id="email" name="email" placeholder="example@mail.com" required><br />
+           <label  for="phone">Phone:</label><br />
+           <input type="tel" id="phone" name="phone" placeholder="+91900000000" required><br />
+           <label  for="message">Message:</label><br />
+           <textarea name="message" id="message"  placeholder="Enter your message here." required></textarea><br />
+           <input class="button" type="submit" id="submit"><br />
+          </form>
+          
+         </div>
+         <div class="col-2">
+           
+            <div>
+           <h3 class="title-2">Mobile:</h3>
+           <a class="contact-links" href="tel:+917654089279">+917654089279</a>
+          </div>
+          <div>
+           <h3 class="title-2">E-mail:</h3>
+           <a class="contact-links" href="mailto: info@parthkushan.in"> info@parthkushan.in</a>
+          </div>
+          <div>
+           <h3 class="title-2">Adress:</h3>
+           <p class="contact-links">Delhi Office: A68 street no 8, Yadav enclave , vikas Nagar new delhi 110059</p>
+           <p class="contact-links">Kolkata Office: 6/1d/2 Nafar Koley Road Kolkata - 700015</p>
+          </div>
+           
+          
+         </div>
+        </div>
+       </div>
+      </section>
+    </main>
+    <footer class="container-fluid" id="footer-section">
+     <div class="container">
+      <p class="footer-text">&copy;2022 All right reserved <span><a href="./../index.html">Parth Kushan</span></a></p>
+     </div>
+    </footer>
+    <script src="./../js/script.js"></script>
+  </body>
+</html>

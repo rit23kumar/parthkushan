@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./../css/mixins.css">
+    <link rel="stylesheet" href="./../css/navbar.css">
+    <link rel="stylesheet" href="./../css/admission.css">
+    <link rel="stylesheet" href="./../css/responsive.css">
+    <title>ParthKushan</title>
+  </head>
+  <body id="root">
+    <nav>
+      <div class="container">
+        <div class="brand">
+          <a href="./../index.html" class="logo"><img src="./../images/logo.png" alt=""></a>
+        </div>
+        
+        <i
+            onclick="showMenu()"
+            id="show-menu"
+            class="fa-solid fa-bars"
+          ></i>
+          <i
+            onclick="hideMenu()"
+            id="hide-menu"
+            class="fa-solid fa-circle-xmark"
+          ></i>
+          
+        <div class="navs" id="navigation">
+          
+          <ul>
+            <li>
+              <a href="./../index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+              <a href="./courses.html" class="nav-links">Courses</a>
+            </li>
+            <li>
+              <a href="./admission.html" class="nav-links   active">Admission</a>
+            </li>
+            <li>
+              <a href="./about.html" class="nav-links">About Us</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="nav-links">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </nav>
+    <a class="top" href="#root"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    <main>
+      <!-- ADMISSION SECTION -->
+      <section class="container-fluid" id="admission-section" style="margin-top: 6rem;">
+       <div class="container">
+        <div class="container-fluid">
+         <h5 class="section-heading">Admission</h5>
+        </div>
+        <form action="" method="">
+         <!-- GENERAL -->
+         <div class="container-fluid">
+          <h5 class="title-2">1. General Information</h5>
+          <div class="row">
+           <div class="col-2">
+            <label for="fname">First Name:</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    placeholder="Enter your first name."
+                    required
+                  />
+           </div>
+           <div class="col-2">
+            <label for="lname">Last Name:</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Enter your last name."
+                    required
+                  />
+           </div>
+          </div>
+          <div class="row">
+                <div class="col-2">
+                  <label for="gender">Gender:</label>
+                  <select name="gender" id="gender">
+                    <option value="">--SELECT GENDER--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Others</option>
+                  </select>
+                </div>
+                <div class="col-2">
+                  <label for="dob">Date of Birth:</label>
+                  <input type="date" id="dob" name="dob" />
+                </div>
+              </div>
+                <div class="row">
+                <div class="col-2">
+                  <label for="phone">Phone:</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+919000000000"
+                    required
+                  />
+                </div>
+                <div class="col-2">
+                  <label for="email">E-mail:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@mail.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <label for="course">Course:</label>
+                <select name="course" id="course">
+                  <option value="">__SELECT COURSE__</option>
+                  <option value="course1">OLEVEL Course</option>
+                  <option value="course2">CCC Course</option>
+                  <option value="course3">DDEO Course</option>
+                  <option value="course4">Diploma in Information Technology</option>
+                  <option value="course5">Diploma in Financial Accounting</option>
+                  <option value="course6">Diploma In Computer Typing</option>
+                  <option value="course7">Diploma In Computer Hardware Technology</option>
+                  <option value="course8">Diploma In Computer Application</option>
+                  <option value="course9">Certificate in Information Technology</option>
+                  <option value="course10">Certificate in Financial Accounting</option>
+                  <option value="course11">Certificate in Computer Teaching</option>
+                  <option value="course12">Certificate in Computer Application</option>
+                  <option value="course13">Advanced Diploma in Computer Application</option>
+                  <option value="course14">Advance Diploma in Information Technology</option>
+                  <option value="course15">Advance Diploma in Computer Hardware and Networking</option>
+                </select>
+                </div>
+                <div class="col-2"></div>
+              </div>
+              <!-- ADRESS -->
+              <div class="container-fluid">
+                <h5 class="title-2">2. Adress Information</h5>
+                <div class="row">
+                <div class="col-2">
+                  <label for="father-name">Father's Name:</label>
+                  <input
+                    type="text"
+                    id="father-name"
+                    name="father-name"
+                    placeholder="Enter your father's name."
+                    required
+                  />
+                </div>
+                <div class="col-2">
+                  <label for="mother-name">Mother's Name:</label>
+                  <input
+                    type="text"
+                    id="mother-name"
+                    name="mother-name"
+                    placeholder="Enter your mother's name."
+                    required
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-2">
+                  <label for="adress">Adress:</label>
+                <input
+                  type="text"
+                  id="adress"
+                  name="adress"
+                  placeholder="Adress"
+                />
+                </div>
+                <div class="col-2">
+                  <label for="district">District:</label>
+                <input
+                  type="text"
+                  id="district"
+                  name="district"
+                  placeholder="District"
+                />
+               </div>
+              </div>
+                
+              <div class="row">
+               
+               <div class="col-2">
+                <input
+                  type="text"
+                  id="state"
+                  name="state"
+                  placeholder="State"
+                />
+               </div>
+               <div class="col-2">
+                <input
+                  type="number"
+                  id="pincode"
+                  name="pincode"
+                  placeholder="Pincode"
+                />
+               </div>
+                
+              </div>
+              </div>
+              <!-- EDUCATION -->
+              <div class="container-fluid">
+               <h5 class="title-2">3. Educational Information</h5>
+               <div class="row">
+                <div class="col-2">
+                  <label for="highest-qualification"
+                    >Highest Qualification:</label
+                  >
+                  <input
+                    type="text"
+                    id="highest-qualification"
+                    name="highest-qualification"
+                    placeholder="Highest Qualification"
+                    required
+                  />
+                </div>
+                <div class="col-2">
+                 <label for="percentage">Mark Percentage Obtained:</label>
+                <input
+                  type="number"
+                  id="percentage"
+                  name="percentage"
+                  placeholder="Percentage"
+                  required
+                />
+                </div>
+                
+              </div>
+              <input class="button" type="submit" value="submit" />
+              </div>
+        </form>
+       </div>
+      </section>
+    </main>
+    <footer class="container-fluid" id="footer-section">
+     <div class="container">
+      <p class="footer-text">&copy;2022 All right reserved <span><a href="./../index.html">Parth Kushan</span></a></p>
+     </div>
+    </footer>
+    <script src="./../js/script.js"></script>
+  </body>
+</html>

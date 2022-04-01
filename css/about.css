@@ -1,0 +1,7 @@
+@import './mixins.css';
+.col-2 .text {
+  color: black;
+  font-size: 1.3rem;
+  text-align: justify;
+  line-height: 1.3;
+}

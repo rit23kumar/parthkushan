@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="./../css/mixins.css">
+    <link rel="stylesheet" href="./../css/navbar.css">
+    <link rel="stylesheet" href="./../css/about.css">
+    <link rel="stylesheet" href="./../css/responsive.css">
+    <title>ParthKushan</title>
+  </head>
+  <body id="root">
+    <nav>
+      <div class="container">
+        <div class="brand">
+          <a href="./../index.html" class="logo"><img src="./../images/logo.png" alt=""></a>
+        </div>
+        
+        <i
+            onclick="showMenu()"
+            id="show-menu"
+            class="fa-solid fa-bars"
+          ></i>
+          <i
+            onclick="hideMenu()"
+            id="hide-menu"
+            class="fa-solid fa-circle-xmark"
+          ></i>
+          
+        <div class="navs" id="navigation">
+          
+          <ul>
+            <li>
+              <a href="./../index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+              <a href="./courses.html" class="nav-links">Courses</a>
+            </li>
+            <li>
+              <a href="./admission.html" class="nav-links">Admission</a>
+            </li>
+            <li>
+              <a href="./about.html" class="nav-links  active">About Us</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="nav-links">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </nav>
+    <a class="top" href="#root"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    <main>
+      <!-- ABOUT SECTION -->
+      <section class="container-fluid" id="about-section" style="margin-top: 6rem;">
+       <div class="container">
+        <div class="container-fluid">
+         <h5 class="section-heading">About Us</h5>
+         <h5 class="section-description">We Believe in Digital India</h5>
+         <div class="card">
+          <div class="row">
+           <div class="col-2">
+             <img class="image" src="./../images/img-2.jpg" alt="">
+           </div>
+           <div class="col-2">
+             <h5 class="title-2">Our Mission</h5>
+             <p class="text">To advance the frontiers of computer knowledge and promote its dissemination through sustainable, affordable learning systems that are seamlessly accessible to all, including the so-called unreached zone, from which tomorrow's leaders and innovators will emerge, the Parth Kushan will: Strengthen the development of the associated learning centre as a proactive role model for high-quality, learner-centered computer literacy programmes. To increase global computer education standards, share professional expertise and resources. For efficient programme delivery, create networks that use emerging technologies and methodologies with a worldwide reach. To solve the issues of access and fairness, provide an intelligent, adaptable educational system and strive for the development of a knowledge-based society.Provide computer instruction to the most remote areas of the world, as well as encourage community engagement in local development. Provide in-service professionals with customised need-based computer education and training opportunities for ongoing professional growth and skill upgradation.</p>
+           </div>
+         </div>
+         </div>
+         <div class="card">
+          <div class="row">
+           <div class="col-2">
+             <h5 class="title-1">Education is a utility which makes human a personality.</h5>
+             <p class="text">
+               It's difficult to dispute that computers have become increasingly important in modern society. Computer technology is omnipresent, from our smartphones in our pockets to smart gadgets controlling our household appliances, and everything in between. It should come as no surprise that computer use in education has been constantly rising, revolutionising traditional education in many ways. Both students and instructors gain from the use of computers in the classroom.
+             </p>
+           </div>
+           <div class="col-2">
+             <img class="image" src="./../images/img-1.jpg" alt="">
+           </div>
+         </div>
+         </div>
+       </div>
+      </section>
+    </main>
+    <footer class="container-fluid" id="footer-section">
+     <div class="container">
+      <p class="footer-text">&copy;2022 All right reserved <span><a href="./../index.html">Parth Kushan</span></a></p>
+     </div>
+    </footer>
+    <script src="./../js/script.js"></script>
+  </body>
+</html>
